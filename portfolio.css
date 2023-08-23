@@ -6,145 +6,6 @@
     margin-bottom: 0%;
 
 }
-/* Estilos para pantallas más pequeñas (móviles) */
-/* Estilos generales para pantallas más grandes */
-/* ... Tus estilos generales aquí ... */
-
-/* Media query para dispositivos móviles */
-@media screen and (max-width: 768px) {
-  /* Fondo de las secciones */
-  #fondo1, #fondo2, #fondo3, #fondo4 {
-    background-color: transparent; /* Cambia el color de fondo o elimínalo */
-    background-repeat: no-repeat;
-  }
-
-  #fondo4 {
-    margin-top: 0; /* Elimina el margen superior */
-  }
-
-  /* NAVEGADOR */
-  .bottom ul {
-    list-style: none;
-    padding: 1%;
-    margin-top: 2%;
-    margin-left: 0.5%; /* Ajusta el margen izquierdo */
-  }
-
-  .bottom ul li a {
-    padding: 1%;
-    font-size: 14px; /* Ajusta el tamaño de fuente */
-    border-radius: 10px; /* Mayor borde redondeado */
-    margin-top: 2%;
-    color: #000000;
-    text-decoration: none;
-    text-align: center; /* Centra el texto */
-  }
-
-  .bottom a:hover {
-    background: #83867a44;
-  }
-
-  /* Estilos de .foto-portfolio */
-  .foto-portfolio {
-    border-radius: 50%; /* Redondea aún más el borde */
-    max-height: 200px; /* Ajusta la altura máxima */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-    position: relative; /* Cambia a posición relativa */
-    top: 0; /* Elimina el desplazamiento vertical */
-    right: 0; /* Elimina el desplazamiento horizontal */
-    margin: 2% auto; /* Centra horizontalmente con margen superior */
-  }
-
-  /* Ajustes para .hello0 */
-  .hello0 {
-    margin-left: 2%; /* Ajusta el margen izquierdo */
-    font-size: 20px; /* Ajusta el tamaño de fuente */
-    margin-top: 2%;
-  }
-
-  /* Ajustes para .HELLO */
-  .HELLO {
-    font-size: 120px; /* Ajusta el tamaño de fuente */
-    margin-top: 2%;
-    margin-bottom: 3%;
-  }
-
-  /* Ajustes para .HELLO2 */
-  .HELLO2 {
-    font-size: 70px; /* Ajusta el tamaño de fuente */
-    margin-top: 2%;
-  }
-
-  /* Ajustes para .informacion_sobre_mi h6 */
-  .informacion_sobre_mi h6 {
-    font-size: 20px; /* Ajusta el tamaño de fuente */
-    margin-top: 1%;
-    margin-bottom: 1%;
-  }
-
-  /* Ajustes para .informacion_sobre_mi h1 */
-  .informacion_sobre_mi h1 {
-    font-size: 60px; /* Ajusta el tamaño de fuente */
-    margin-top: 2%;
-  }
-
-  /* Ajustes para .informacion_sobre_mi h4 */
-  .informacion_sobre_mi h4 {
-    font-size: 30px; /* Ajusta el tamaño de fuente */
-    margin-top: 1%;
-  }
-
-  /* Ajustes para .informacion_sobre_mi a */
-  .informacion_sobre_mi a {
-    font-size: 16px; /* Ajusta el tamaño de fuente */
-  }
-
-  /* Ajustes para .conocimientos h6 */
-  .conocimientos h6 {
-    font-size: 18px; /* Ajusta el tamaño de fuente */
-    margin-top: 1%;
-    margin-bottom: 1%;
-  }
-
-  /* Ajustes para .conocimientos */
-  .conocimientos {
-    font-size: 120px; /* Ajusta el tamaño de fuente */
-    margin-top: 5%;
-  }
-
-  /* Ajustes para .imagenes img */
-  .imagenes img {
-    height: 40px; /* Ajusta el tamaño de las imágenes */
-    width: 40px;
-    margin: 0 2%; /* Ajusta los márgenes */
-    margin-top: 2%;
-    margin-bottom: 2%;
-  }
-
-  /* Ajustes para .contacto h2 */
-  .contacto h2 {
-    font-size: 60px; /* Ajusta el tamaño de fuente */
-    margin-top: 2%;
-  }
-
-  /* Ajustes para .contacto h6 */
-  .contacto h6 {
-    font-size: 30px; /* Ajusta el tamaño de fuente */
-    margin-top: 1%;
-    margin-bottom: 1%;
-  }
-
-  /* Ajustes para .formulario */
-  .formulario {
-    font-size: 14px;
-    background-color: rgba(255, 255, 255, 0.637);
-    border: 2px solid rgb(61, 46, 4);
-    margin: 5% auto; /* Centra vertical y horizontalmente */
-    padding: 10px; /* Añade espacio adicional alrededor del formulario */
-  }
-}
-
-  
   #fondo1{
     background-color: #f7df56d3;
     background-repeat: no-repeat;
@@ -331,6 +192,143 @@
     margin-left: 35%;
     margin-right: 35%;
 
+}
+/* Estilos para pantallas más pequeñas (móviles) */
+/* Estilos generales para pantallas más grandes */
+/* ... Tus estilos generales aquí ... */
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  /* Fondo de las secciones */
+  #fondo1, #fondo2, #fondo3, #fondo4 {
+    background-color: transparent; /* Cambia el color de fondo o elimínalo */
+    background-repeat: no-repeat;
+  }
+
+  #fondo4 {
+    margin-top: 0; /* Elimina el margen superior */
+  }
+
+  /* NAVEGADOR */
+  .bottom ul {
+    list-style: none;
+    padding: 1%;
+    margin-top: 2%;
+    margin-left: 0.5%; /* Ajusta el margen izquierdo */
+  }
+
+  .bottom ul li a {
+    padding: 1%;
+    font-size: 14px; /* Ajusta el tamaño de fuente */
+    border-radius: 10px; /* Mayor borde redondeado */
+    margin-top: 2%;
+    color: #000000;
+    text-decoration: none;
+    text-align: center; /* Centra el texto */
+  }
+
+  .bottom a:hover {
+    background: #83867a44;
+  }
+
+  /* Estilos de .foto-portfolio */
+  .foto-portfolio {
+    border-radius: 50%; /* Redondea aún más el borde */
+    max-height: 200px; /* Ajusta la altura máxima */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    position: relative; /* Cambia a posición relativa */
+    top: 0; /* Elimina el desplazamiento vertical */
+    right: 0; /* Elimina el desplazamiento horizontal */
+    margin: 2% auto; /* Centra horizontalmente con margen superior */
+  }
+
+  /* Ajustes para .hello0 */
+  .hello0 {
+    margin-left: 2%; /* Ajusta el margen izquierdo */
+    font-size: 20px; /* Ajusta el tamaño de fuente */
+    margin-top: 2%;
+  }
+
+  /* Ajustes para .HELLO */
+  .HELLO {
+    font-size: 120px; /* Ajusta el tamaño de fuente */
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+
+  /* Ajustes para .HELLO2 */
+  .HELLO2 {
+    font-size: 70px; /* Ajusta el tamaño de fuente */
+    margin-top: 2%;
+  }
+
+  /* Ajustes para .informacion_sobre_mi h6 */
+  .informacion_sobre_mi h6 {
+    font-size: 20px; /* Ajusta el tamaño de fuente */
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  /* Ajustes para .informacion_sobre_mi h1 */
+  .informacion_sobre_mi h1 {
+    font-size: 60px; /* Ajusta el tamaño de fuente */
+    margin-top: 2%;
+  }
+
+  /* Ajustes para .informacion_sobre_mi h4 */
+  .informacion_sobre_mi h4 {
+    font-size: 30px; /* Ajusta el tamaño de fuente */
+    margin-top: 1%;
+  }
+
+  /* Ajustes para .informacion_sobre_mi a */
+  .informacion_sobre_mi a {
+    font-size: 16px; /* Ajusta el tamaño de fuente */
+  }
+
+  /* Ajustes para .conocimientos h6 */
+  .conocimientos h6 {
+    font-size: 18px; /* Ajusta el tamaño de fuente */
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  /* Ajustes para .conocimientos */
+  .conocimientos {
+    font-size: 120px; /* Ajusta el tamaño de fuente */
+    margin-top: 5%;
+  }
+
+  /* Ajustes para .imagenes img */
+  .imagenes img {
+    height: 40px; /* Ajusta el tamaño de las imágenes */
+    width: 40px;
+    margin: 0 2%; /* Ajusta los márgenes */
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  /* Ajustes para .contacto h2 */
+  .contacto h2 {
+    font-size: 60px; /* Ajusta el tamaño de fuente */
+    margin-top: 2%;
+  }
+
+  /* Ajustes para .contacto h6 */
+  .contacto h6 {
+    font-size: 30px; /* Ajusta el tamaño de fuente */
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  /* Ajustes para .formulario */
+  .formulario {
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.637);
+    border: 2px solid rgb(61, 46, 4);
+    margin: 5% auto; /* Centra vertical y horizontalmente */
+    padding: 10px; /* Añade espacio adicional alrededor del formulario */
+  }
 }
 
  
