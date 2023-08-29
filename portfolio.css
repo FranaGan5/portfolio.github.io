@@ -1,29 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Pacifico&display=swap');
 
-  .pagina{
-    margin-left: 0px;
-    margin-right: -1%;
-    margin-top: -2%;
-    margin-bottom: 0%;
 
+.pagina{
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  
 }
+@media (max-width:768px){
+  .pagina{
+  margin: 0;
+  }
+}
+/*--@MEDIAS QUERYS CON  SU CONDICION*/
+
+  #fondo1, #fondo2, #fondo3, #fondo4{
+    background-repeat: no-repeat;
+  }
   #fondo1{
     background-color: #f7df56d3;
-    background-repeat: no-repeat;
+    margin-top: -2%;
+  }
+  @media (max-width:768px){
+    #fondo1{
+      background-color: #f7df56d3;
+      margin-top: -2%;
+    }
   }
   #fondo2{
     background-color: #ffffff;
-    background-repeat: no-repeat;
     
+  }
+  @media (max-width:768px){
+    #fondo2{
+      background-color: #ffffff;
+    }
   }
   #fondo3{
     background-color: #de5f5f;
-    background-repeat: no-repeat;
-    
+  }
+  @media (max-width:768px){
+    #fondo3{
+      background-color: #de5f5f;
+    }
   }
   #fondo4{
     background-color: #3A99D8;
     margin-top: -2%;
-    background-repeat: no-repeat;
+  }
+  @media (max-width:768px){
+    #fondo4{
+      background-color: #3A99D8;
+      margin-top: -2%;
+    }
   }
   
   /* NAVEGADOR */
@@ -33,6 +64,13 @@
             padding: 1%;
             margin-top: 2%;
             margin-left: -0.5%;
+        }
+        @media (max-width: 768px) {
+          .bottom ul {
+            list-style:none;
+            writing-mode: horizontal-tb;
+            
+          }
         }
 
         .bottom ul li a{
@@ -46,14 +84,32 @@
             margin: 0 auto;
             border-radius: 20px;
             writing-mode: vertical-rl;
+            font-family: 'DM Sans', sans-serif;
         }
+        @media (max-width: 768px) {
+          .bottom ul li a{
+            font-size: small;
+            border-radius: 20px;
+            list-style: none;
+            color: #000000;
+            text-decoration: none;
+            writing-mode: vertical-lr;
+            font-family: 'DM Sans', sans-serif;
+        }
+          
+          }
         
         .bottom a:hover {
             background: #83867a44;
         }
-        
+        @media (max-width: 768px) {
+          .bottom a:hover {
+            background: #83867a44;
+        }
+      }
   
   /* FIN DEL NAVEGADOR */
+ 
   .foto-portfolio {
     border-radius: 60%;
     max-height: 40%;
@@ -62,21 +118,51 @@
     top: 15%;
     right: 8%;
   }
-  .hello0 {
-    margin-left: 5.5%;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: -10%;
-}
-.HELLO{
-    margin-left: 5%;
+  @media (max-width: 768px) {
+    .foto-portfolio {
+      border-radius: 50%;
+      max-height: 20%;
+      box-shadow: 00px 4px 4px rgba(0, 0, 0, 0.25);
+      position: absolute;
+      left: 28%;
+      top:26%;
+    }
+  }
+  
+.HELLO{ /*Hola, Hello, Hallo*/
     color: #000000;
     font-family:sans-serif;
-    font-size: 800%;
+    font-size: 900%;
     letter-spacing: -9px;
-    margin-top: -10%; 
-    margin-bottom: 6%; 
+    margin-left: 5%;
+    margin-top: 0; 
 }
-.HELLO2{
+@media (max-width: 768px) {
+  
+  .HELLO {
+    color: #000000;
+    font-family: sans-serif;
+    font-size: 200%;
+    letter-spacing: -9px;
+    visibility: hidden;
+    margin-top: -50%;
+  }
+  
+  .HELLO::before {
+    content: "Hello,";
+    color: rgb(0, 0, 0);
+    font-size: 280%;
+    letter-spacing: -1px;
+    margin-left: 24%;
+    margin-top: -12%;
+    visibility: visible;
+    font-family: 'DM Sans', sans-serif;
+  }
+  
+}  
+
+
+.HELLO2{ /*Welcome, bienvenido*/
     margin-left: 25%;
     color: #000000;
     font-family:sans-serif;
@@ -84,6 +170,27 @@
     letter-spacing: -7px;
     margin-top: -6%;
     
+}
+@media (max-width: 768px) {
+  .HELLO2{
+    color: #000000;
+    font-family:sans-serif;
+    font-size: 200%;
+    letter-spacing: 1px;
+    margin-left: 22%;
+    margin-top: -12%;
+    font-family: 'Pacifico', cursive;
+    visibility: hidden;
+  }
+  .HELLO2::before {
+    content: "Welcome";
+    color: rgb(0, 0, 0);
+    font-size: 70%;
+    letter-spacing: -1px;
+    margin-left: 20%;
+    visibility: visible;
+    font-family: 'DM Sans', sans-serif;
+  }
 }
 /*#ACERCA DE MI*/
 .informacion_sobre_mi h6{
@@ -97,6 +204,17 @@
     text-align: left;
     margin-left: 5%;
 }
+@media (max-width: 768px) {
+  .informacion_sobre_mi h6{
+    color: #000000;
+    font-family:sans-serif;
+    font-size: 120%;
+    letter-spacing: 1px;
+    margin-left: 5%;
+    margin-top: 33%;
+    font-family: 'Pacifico', cursive;
+  }
+}
 /*Quien soy*/
   .informacion_sobre_mi h1{
     margin-left: 5%;
@@ -107,6 +225,25 @@
     margin-top: 2%;
     text-decoration: none;
   }
+  @media (max-width: 768px) {
+    .informacion_sobre_mi h1{
+      color: #000000;
+      font-family:sans-serif;
+      font-size: 120%;
+      letter-spacing: 1px;
+      margin-left: 5%;
+      font-family: 'DM Sans', sans-serif;
+      visibility: hidden;
+    }
+    .informacion_sobre_mi h1::before {
+      content: "Mi nombre es Francisco. Actualmente mi formación está enfocada en el desarrollo de aplicaciones multiplataforma.";
+      color: rgb(0, 0, 0);
+      font-size: 100%;
+      letter-spacing: -1px;
+      visibility: visible;
+      font-family: 'DM Sans', sans-serif;
+    }
+  }
  /*Quien soy en inglés*/
   .informacion_sobre_mi h4{
     font-family:sans-serif;
@@ -116,7 +253,25 @@
     margin-left: 5%;
     text-decoration: none;
   }
-  
+  @media (max-width: 768px) {
+    .informacion_sobre_mi h4{
+      color: #000000;
+      font-family:sans-serif;
+      font-size: 120%;
+      margin-top: -20%;
+      letter-spacing: 1px;
+      margin-left: 5%;
+      font-family: 'DM Sans', sans-serif, cursive;
+      visibility: hidden;
+    }
+    .informacion_sobre_mi h4::before {
+      content: "My name is Francisco. Currently my training is focused on the development of multiplatform applications";
+      color: rgb(0, 0, 0);
+      letter-spacing: -1px;
+      visibility: visible;
+      font-family: 'DM Sans', sans-serif, cursive;
+  }
+}
   /*Linkedin*/
   .informacion_sobre_mi a{
     font-family:sans-serif;
@@ -124,6 +279,7 @@
     color: #3d3d3d;
     font-weight: bold;
   }
+ 
   .informacion_sobre_mi h4:hover{
     color: #000000;  
   }
@@ -141,6 +297,19 @@
     text-align: left;
     margin-left: 5%;
 }
+@media (max-width: 768px) {
+  .conocimientos h6{
+    font-family:sans-serif;
+    font-size: 90%;
+    letter-spacing: 2px;
+    margin-top: -3%;
+    margin-bottom: 1%;
+    text-decoration: none;
+    text-align: left;
+    margin-left: 5%;
+    font-family: 'Pacifico', cursive;
+  }
+}
 .conocimientos{
     color: #ffffff;
     font-family:sans-serif;
@@ -148,15 +317,37 @@
     letter-spacing: -2px;
     text-align:center;
     margin-top:5%;
+    
+}
+@media (max-width: 768px) {
+  .conocimientos h1{
+    color: #000000;
+    font-family:sans-serif;
+    font-size: 90%;
+    letter-spacing: 0.px;
+    margin-left: 5%;
+    margin-top: -6%;
+    font-family: 'DM Sans', sans-serif;
+    visibility:collapse;
+  }
 }
 /*Imagenes de tecnologías*/
 .imagenes img{
     height: 6%;
     width: 6%;
-    margin: 0 1%;
-    margin-top: -2%;
+    margin: 1%;
+    margin-top: 2%;
     margin-bottom: 2%;
     transition: transform 0.3s ease;
+}
+@media (max-width: 768px) {
+  .imagenes img{
+    height: 10%;
+    width: 12%;
+    margin: 1%;
+    margin-top: -2%;
+    margin-bottom: 2%;
+  }
 }
 .imagenes img:hover{
   transform: scale(1.2);
@@ -193,143 +384,8 @@
     margin-right: 35%;
 
 }
-/* Estilos para pantallas más pequeñas (móviles) */
-/* Estilos generales para pantallas más grandes */
-/* ... Tus estilos generales aquí ... */
 
-/* Media query para dispositivos móviles */
-@media screen and (max-width: 768px) {
-  /* Fondo de las secciones */
-  #fondo1, #fondo2, #fondo3, #fondo4 {
-    background-color: transparent; /* Cambia el color de fondo o elimínalo */
-    background-repeat: no-repeat;
-  }
 
-  #fondo4 {
-    margin-top: 0; /* Elimina el margen superior */
-  }
-
-  /* NAVEGADOR */
-  .bottom ul {
-    list-style: none;
-    padding: 1%;
-    margin-top: 2%;
-    margin-left: 0.5%; /* Ajusta el margen izquierdo */
-  }
-
-  .bottom ul li a {
-    padding: 1%;
-    font-size: 14px; /* Ajusta el tamaño de fuente */
-    border-radius: 10px; /* Mayor borde redondeado */
-    margin-top: 2%;
-    color: #000000;
-    text-decoration: none;
-    text-align: center; /* Centra el texto */
-  }
-
-  .bottom a:hover {
-    background: #83867a44;
-  }
-
-  /* Estilos de .foto-portfolio */
-  .foto-portfolio {
-    border-radius: 50%; /* Redondea aún más el borde */
-    max-height: 200px; /* Ajusta la altura máxima */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-    position: relative; /* Cambia a posición relativa */
-    top: 0; /* Elimina el desplazamiento vertical */
-    right: 0; /* Elimina el desplazamiento horizontal */
-    margin: 2% auto; /* Centra horizontalmente con margen superior */
-  }
-
-  /* Ajustes para .hello0 */
-  .hello0 {
-    margin-left: 2%; /* Ajusta el margen izquierdo */
-    font-size: 20px; /* Ajusta el tamaño de fuente */
-    margin-top: 2%;
-  }
-
-  /* Ajustes para .HELLO */
-  .HELLO {
-    font-size: 120px; /* Ajusta el tamaño de fuente */
-    margin-top: 2%;
-    margin-bottom: 3%;
-  }
-
-  /* Ajustes para .HELLO2 */
-  .HELLO2 {
-    font-size: 70px; /* Ajusta el tamaño de fuente */
-    margin-top: 2%;
-  }
-
-  /* Ajustes para .informacion_sobre_mi h6 */
-  .informacion_sobre_mi h6 {
-    font-size: 20px; /* Ajusta el tamaño de fuente */
-    margin-top: 1%;
-    margin-bottom: 1%;
-  }
-
-  /* Ajustes para .informacion_sobre_mi h1 */
-  .informacion_sobre_mi h1 {
-    font-size: 60px; /* Ajusta el tamaño de fuente */
-    margin-top: 2%;
-  }
-
-  /* Ajustes para .informacion_sobre_mi h4 */
-  .informacion_sobre_mi h4 {
-    font-size: 30px; /* Ajusta el tamaño de fuente */
-    margin-top: 1%;
-  }
-
-  /* Ajustes para .informacion_sobre_mi a */
-  .informacion_sobre_mi a {
-    font-size: 16px; /* Ajusta el tamaño de fuente */
-  }
-
-  /* Ajustes para .conocimientos h6 */
-  .conocimientos h6 {
-    font-size: 18px; /* Ajusta el tamaño de fuente */
-    margin-top: 1%;
-    margin-bottom: 1%;
-  }
-
-  /* Ajustes para .conocimientos */
-  .conocimientos {
-    font-size: 120px; /* Ajusta el tamaño de fuente */
-    margin-top: 5%;
-  }
-
-  /* Ajustes para .imagenes img */
-  .imagenes img {
-    height: 40px; /* Ajusta el tamaño de las imágenes */
-    width: 40px;
-    margin: 0 2%; /* Ajusta los márgenes */
-    margin-top: 2%;
-    margin-bottom: 2%;
-  }
-
-  /* Ajustes para .contacto h2 */
-  .contacto h2 {
-    font-size: 60px; /* Ajusta el tamaño de fuente */
-    margin-top: 2%;
-  }
-
-  /* Ajustes para .contacto h6 */
-  .contacto h6 {
-    font-size: 30px; /* Ajusta el tamaño de fuente */
-    margin-top: 1%;
-    margin-bottom: 1%;
-  }
-
-  /* Ajustes para .formulario */
-  .formulario {
-    font-size: 14px;
-    background-color: rgba(255, 255, 255, 0.637);
-    border: 2px solid rgb(61, 46, 4);
-    margin: 5% auto; /* Centra vertical y horizontalmente */
-    padding: 10px; /* Añade espacio adicional alrededor del formulario */
-  }
-}
 
  
   
